@@ -1,0 +1,28 @@
+---
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aresync</title>
+    <style>
+      body { font-family: sans-serif; margin: 0 auto; line-height: 1.6; color: #333; }
+      main { max-width: 800px; margin: 0 auto; padding: 2rem; }
+      h1 { border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+      h2 { margin-top: 1.5rem; }
+      .aresync-img { display: block; margin: 0 auto; max-width: 80%; height: auto; padding-top: 10px;}
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Aresyncとは</h1>
+        <p>ArestiaというMinecraftサーバーに接続する際に必要なアプリケーションです。</p>
+        <p>単なるランチャーとしての役割だけでなく、フレンドやパーティー、ボイスチャット等の機能を提供します。</p>
+
+        <img src="/images/aresync.png" alt="Aresyncのスクリーンショット" class="aresync-img">
+    </main>
+
+    <Footer />
+  </body>
+</html>

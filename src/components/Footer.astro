@@ -1,0 +1,79 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+  <div class="footer-content">
+    <div class="links">
+      <a href="/aresync">ホーム</a>
+      <a href="/aresync/privacy">プライバシーポリシー</a>
+      <a href="/aresync/terms">利用規約</a>
+    </div>
+
+    <div class="disclaimer">
+      <p>
+        Aresync は個人によって開発・運営されているサードパーティ製アプリケーションです。<br />
+        Mojang AB または Microsoft Corporation との提携、承認、スポンサーシップ関係はありません。<br />
+        「Minecraft」は Mojang Synergies AB の商標です。
+      </p>
+    </div>
+    
+    <p class="copyright">&copy; {currentYear} Arestia. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  :global(body) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #111;
+    color: #888;
+    padding: 2rem 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .links {
+    margin-bottom: 1.5rem;
+  }
+  .links a {
+    color: #aaa;
+    margin: 0 0.75rem;
+    text-decoration: none;
+  }
+  .links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .disclaimer {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .disclaimer strong {
+    color: #ccc;
+  }
+  .copyright {
+    color: #666;
+    font-size: 0.75rem;
+  }
+  .disclaimer {
+    text-align: center;
+    padding: 0%;
+  }
+</style>
